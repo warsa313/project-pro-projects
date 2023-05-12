@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 
-S3_DATA_INPUT_PATH="s3://s3-projectpro-emr-athena-sripad/source-folder/wikiticker-2015-09-12-sampled.json"
-S3_DATA_OUTPUT_PATH_FILTERED="s3://s3-projectpro-emr-athena-sripad/data-output/filtered"
+S3_DATA_INPUT_PATH="s3://s3-projectpro-emr-athena-warsame/source-folder/wikiticker-2015-09-12-sampled.json"
+S3_DATA_OUTPUT_PATH_FILTERED="s3://s3-projectpro-emr-athena-warsame/data-output/filtered/"
 
 def main():
     spark = SparkSession.builder.appName('projectProDemo').getOrCreate()
@@ -16,3 +16,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
